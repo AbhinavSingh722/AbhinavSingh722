@@ -1,0 +1,22 @@
+name: Daily Green Contribution
+
+on:
+  schedule:
+    - cron: "30 18 * * *" # Runs daily at 12:00 AM IST (6:30 PM UTC)
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  green-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Make Daily Commit
+        run: |
+          git config user.name "AbhinavSingh722"
+          git config user.email "abhinavsingh26117@gmail.com"
+          echo "$(date -u '+%Y-%m-%d %H:%M:%S UTC') — Automated daily update" >> activity.log
+          git add activity.log
+          git commit -m "📊 Daily activity update — $(date -u '+%b %d, %Y')"
+          git push
