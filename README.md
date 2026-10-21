@@ -232,7 +232,7 @@ currently_building: "AI systems that bridge the gap
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=AbhinavSingh722&theme=tokyo-night&hide_border=true&bg_color=0D1117&color=6C63FF&line=A78BFA&point=FFFFFF&area=true&area_color=6C63FF" width="98%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=AbhinavSingh722&theme=tokyonight" width="98%" />
 </p>
 
 <!-- ═══════════════════ CONTRIBUTION SNAKE ════════════════════════════════ -->
